@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar{
+  background-color: black;
+  height: 40px;
+  color: white; 
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a{
+  color: white;
+  margin: 0 5px 0 5px;
+  text-decoration: none;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg');
+  background-size: cover;
+}
+
+#home h1 {
+  margin-top: 0;
+  color: white;
+}
+
+.portfolio{
+  color: #00ced1;
+}
+
+#home .nav-buttons {
+  margin-top: 20px;
+}
+
+#home .nav-buttons button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Profile Section */
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+#profile h1 {
+  margin-top: 0;
+  color: white;
+}
+
+#profile h3 {
+  color: #555;
+  margin-top: 0;
+}
+
+#profile p {
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#profile li {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#profile button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+#contact h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.contact-item a{
+  text-decoration: none;
+  color: blue;
+  margin: 0 0 0 5px;
+}
+
+
+/* Projects Section */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8a2be2;
+}
+
+#projects h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.project {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  box-shadow: 0 5px 5px 0 grey;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project p {
+  color: #555;
+}
+
+.project a{
+  text-decoration: none;
+}
+/* Navigation Buttons */
+.nav-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .navbar{
+    padding: 0;
+  }
+
+  #profile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #home h1 {
+      color: black;
+    }
+    
+  #contact {
+    padding-bottom: 30px;
+  }
+
+  #projects {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    overflow: scroll;
+  }
+
+  .project {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile h1 {
+    font-size: 26px;
+  }
+  #home h1 {
+      color: black;
+    }
+  #profile h3 {
+    font-size: 18px;
+  }
+
+  .project h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css"  href="style.css"/>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-nav ">
+          <a class="nav-link" href="#home" >Home</a>
+          <a class="nav-link" href="#profile">About Me</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#projects">Project</a>
+      </div>  
+    </nav>
+    <!-- Home Page -->
+    <section id="home">
+      <h1>Welcome to My <span class="portfolio">Portfolio</span></h1>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <h1>SHASHI PREETHAM</h1>
+      <h3>FRONT END DEVELOPER</h3>
+      <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating visually appealing and user-friendly websites. My goal is to continuously learn and improve my skills to deliver high-quality web solutions.</p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>UI/UX Design</li>
+        <li>Python</li>
+      </ul>
+        <div class="nav-buttons">
+          <button onclick="navigateTo('home')">Home</button>
+          <button onclick="navigateTo('contact')">Contact</button>
+          <button onclick="navigateTo('projects')">Projects</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-details">
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <p>Phone Number: <a href="tel:+919553665826" target="_blank">9553668526</a></p>
+    </div>
+    <div class="contact-item">
+      <i class="far fa-envelope"></i>
+      <p>Email: <a href="mailto:shashipreetham@gmail.com" target="_blank">shashipreetham@gmail.com</a></p>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <p>Instagram: <a href="https://www.instagram.com/shashipreetham3889" target="_blank">shashipreetham3889</a></p>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-facebook"></i>
+      <p>Facebook: <a href="https://www.facebook.com/Shashi Preetham" target="_blank">Shashi Preetham</a></p>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-github"></i>
+      <p>GitHub: <a href="https://github.com/shashipreetham23" target="_blank">shashipreetham23</a></p>
+    </div>
+    <div class="nav-buttons">
+        <button onclick="navigateTo('home')">Home</button>
+        <button onclick="navigateTo('profile')">Profile</button>
+        <button onclick="navigateTo('projects')">Projects</button>
+      </div>
+  </div>
+  
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3><a href="https://shasfoodmunch.ccbp.tech" target="_blank">Food Munch</a> </h3>
+        <p>Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item, offers.</p>
+        <p>Technologies used: HTML,CSS,Bootstrap</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://wikipedialite.ccbp.tech" target="_blank">Wikipedia Search Application</a></h3>
+        <p>Developed custom Wikipedia search application where user can search and view curated results and can see detailed explaination in wikipedia by clicking on the specific result.</p>
+        <p>Technologies used: HTML,CSS,Bootstrap,JS,REST API Calls</p>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="navigateTo('home')">Home</button>
+        <button onclick="navigateTo('profile')">Profile</button>
+        <button onclick="navigateTo('contact')">Contact</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function navigateTo(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
